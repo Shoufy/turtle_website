@@ -1,0 +1,214 @@
+:root {
+  /* ****** Style général ****** */
+  /* Couleur */
+  --white: #fff;
+  --bleu-fonce: #031163;
+  --bleu-clair: #1978a5;
+  --bleu-turquoise: #1fbfb8;
+  --bleu-fonce-semi-transparent: rgba(3, 17, 99, 0.54);
+  --bleu-clair-semi-transparent: rgba(25, 120, 165, 0.54);
+  --bleu-turquoise-semi-transparent: rgba(31, 191, 184, 0.54);
+  --bleu-icone-maison: #0a415b;
+
+  /* Font  */
+  --font-family: Roboto, sans-serif;
+
+  /* Marge  */
+  --header-marge: 0.5em;
+
+  /* ****** Style Mobile ****** */
+}
+
+body {
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+}
+
+/* ********** HEADER */
+.block_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner_image {
+  width: 100%;
+  height: 10em;
+  object-fit: cover;
+  object-position: top;
+}
+
+.filter {
+  height: 10em;
+  background-image: linear-gradient(
+    to right,
+    rgba(31, 191, 184, 0.7) 0,
+    rgba(25, 120, 165, 0.7) 50%,
+    rgba(3, 17, 99, 0.8) 100%
+  );
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.title_header {
+  font-size: 1.8em;
+  border: 2px solid var(--white);
+  padding: 0.3em 0.5em;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  color: var(--white);
+  margin: 0 var(--header-marge);
+  border-radius: 0.12em;
+  -webkit-border-radius: 0.12em;
+  -moz-border-radius: 0.12em;
+  -ms-border-radius: 0.12em;
+  -o-border-radius: 0.12em;
+}
+/* ------> FIN HEADER */
+
+/* ********** MAIN */
+
+.container_main_div {
+  display: flex;
+  flex-direction: column;
+}
+
+.container_section_one {
+  margin: 1em 0;
+}
+.container_section_two,
+.container_section_three {
+  margin: 1em;
+}
+
+.box_nav_one,
+.box_nav_two,
+.box_nav_three {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .round_image_one {
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  width: 43%;
+  clip-path: ellipse(50% 37%);
+  position: relative;
+} */
+
+.box_visit {
+  /* display: none; */
+  text-align: center;
+  width: 4.7em;
+  font-size: 0.8em;
+  border: 1px solid black;
+  padding: 1em;
+  background-color: grey;
+  color: white;
+  position: absolute;
+  top: 20.78em;
+  left: 14.11em;
+}
+
+.round_image_one,
+.round_image_two,
+.round_image_three {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  width: 10em;
+  height: 10em;
+  /* clip-path: ellipse(50% 37%); */
+  position: relative;
+}
+
+/* ------> FIN MAIN */
+
+/* ********** FOOTER */
+#footer_background {
+  background: #1fbfb8;
+  background: -moz-linear-gradient(
+    gauche,
+    #1fbfb8 0%,
+    #1978a5 50%,
+    #031163 100%
+  );
+  background: -webkit-linear-gradient(
+    gauche,
+    #1fbfb8 0%,
+    #1978a5 50%,
+    #031163 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(31, 191, 184, 0.7) 0%,
+    rgba(25, 120, 165, 0.7) 50%,
+    rgba(3, 17, 99, 0.8) 100%
+  );
+}
+
+/* .footer_filter {
+  background-image: linear-gradient(
+    to right,
+    rgba(31, 191, 184, 0.4) 0,
+    rgba(25, 120, 165, 0.4) 50%,
+    rgba(3, 17, 99, 0.4) 100%
+  );
+  position: absolute;
+  height: 9em;
+  width: 100%;
+} */
+
+.title_footer_box {
+  padding: 1.3em;
+}
+
+.title_footer {
+  font-size: 1.05em;
+  border: 2px solid var(--white);
+  padding: 0.3em 0.5em;
+  border-radius: 0.2em;
+  text-transform: uppercase;
+  border-radius: 0.12em;
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  -ms-border-radius: 0.2em;
+  -o-border-radius: 0.2em;
+  text-align: center;
+  margin: 0.6em;
+  padding-bottom: 0.2em;
+  color: var(--white);
+}
+
+.footer_nav_box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer_ul_box {
+  display: flex;
+}
+
+.paragraph_legal {
+  font-size: 0.8em;
+  font-weight: bold;
+  color: var(--white);
+}
+
+.icon_space {
+  list-style-type: none;
+  margin-right: 0.5em;
+  color: var(--white);
+}
+
+/* ------> FIN DU FOOTER */
