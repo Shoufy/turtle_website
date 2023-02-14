@@ -43,14 +43,32 @@ body {
   height: 10em;
   background-image: linear-gradient(
     to right,
-    rgba(31, 191, 184, 0.7) 0,
-    rgba(25, 120, 165, 0.7) 50%,
-    rgba(3, 17, 99, 0.8) 100%
+    rgba(31, 191, 184, 0.9) 0,
+    rgba(25, 120, 165, 0.9) 50%,
+    rgba(3, 17, 99, 0.9) 100%
   );
   position: absolute;
   top: 0;
   width: 100%;
 }
+
+/* .filter_img_one {
+  border-radius: 50%;
+  height: 10em;
+  background-image: linear-gradient(
+    to right,
+    var(--bleu-turquoise-semi-transparent),
+    var(--bleu-clair-semi-transparent),
+    var(--bleu-fonce-semi-transparent)
+  );
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  width: 10em;
+  position: absolute;
+  color: red;
+} */
 
 .title_header {
   font-size: 1.8em;
@@ -102,17 +120,6 @@ body {
   max-width: 100%;
 }
 
-/* .round_image_one {
-  border-radius: 100%;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
-  -ms-border-radius: 100%;
-  -o-border-radius: 100%;
-  width: 43%;
-  clip-path: ellipse(50% 37%);
-  position: relative;
-} */
-
 .box_visit,
 .box_tarif,
 .box_formation {
@@ -157,7 +164,6 @@ body {
   -o-border-radius: 50%;
   width: 10em;
   height: 10em;
-  /* clip-path: ellipse(50% 37%); */
   position: relative;
   max-width: 100%;
 }
@@ -185,22 +191,16 @@ body {
     rgba(25, 120, 165, 0.7) 50%,
     rgba(3, 17, 99, 0.8) 100%
   );
-}
 
-/* .footer_filter {
-  background-image: linear-gradient(
-    to right,
-    rgba(31, 191, 184, 0.4) 0,
-    rgba(25, 120, 165, 0.4) 50%,
-    rgba(3, 17, 99, 0.4) 100%
-  );
-  position: absolute;
-  height: 9em;
-  width: 100%;
-} */
+  display: flex;
+  flex-direction: column;
+}
 
 .title_footer_box {
   padding: 1.3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .title_footer {
@@ -218,6 +218,7 @@ body {
   margin: 0.6em;
   padding-bottom: 0.2em;
   color: var(--white);
+  width: fit-content;
 }
 
 .footer_nav_box {
@@ -243,3 +244,25 @@ body {
 }
 
 /* ------> FIN DU FOOTER */
+
+@media only screen and (min-width: 800px) {
+  /* *************** MAIN */
+  .container_main_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5em 0;
+  }
+
+  .title_footer {
+    font-size: 1.5em;
+  }
+
+  .paragraph_legal {
+    font-size: 1em;
+  }
+
+  .fa-brands {
+    font-size: 1.1em;
+  }
+}
