@@ -245,6 +245,7 @@ body {
 
 /* ------> FIN DU FOOTER */
 
+/* RESPONSIVE TABLET */
 @media only screen and (min-width: 800px) {
   /* *************** MAIN */
   .container_main_div {
@@ -264,5 +265,30 @@ body {
 
   .fa-brands {
     font-size: 1.1em;
+  }
+}
+
+/* RESPONSIVE DESKTOP */
+@media only screen and (min-width: 1080px) {
+  .round_image_one,
+  .round_image_two,
+  .round_image_three {
+    width: 19em;
+    height: 19em;
+  }
+
+  .box_visit,
+  .box_tarif,
+  .box_formation {
+    width: 8em;
+    font-size: 1.2em;
+    border: 1px solid black;
+    padding: 2em 0.5em 2em 0.5em;
+    top: 79%;
+    left: 71%;
+  }
+
+  .container_main_div {
+    padding: 1em 0;
   }
 }
