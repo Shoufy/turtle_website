@@ -482,6 +482,15 @@ body {
   justify-content: center;
   align-items: center;
   width: 70%;
+  margin-bottom: 1em;
+}
+
+.text_img_gallery {
+  height: 4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .gallerie_img_small {
@@ -518,4 +527,21 @@ body {
   cursor: pointer;
 }
 
+/* RESPONSIVE TABLET MEET PAGE */
+@media only screen and (min-width: 800px) {
+  .block_nav_gallerie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+
+  .box_img_gallerie {
+    width: 35%;
+  }
+
+  input[type="email"] {
+    width: 30em;
+  }
+}
 /* **************************** FIN MEET PAGE  */
