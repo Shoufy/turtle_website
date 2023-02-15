@@ -9,6 +9,8 @@
   --bleu-clair-semi-transparent: rgba(25, 120, 165, 0.54);
   --bleu-turquoise-semi-transparent: rgba(31, 191, 184, 0.54);
   --bleu-icone-maison: #0a415b;
+  --bleu-icone-gallerie-page: #0a415b;
+  --bleu-fonce-semi-transparent-gallerie-page: #02082a;
 
   /* Font  */
   --font-family: Roboto, sans-serif;
