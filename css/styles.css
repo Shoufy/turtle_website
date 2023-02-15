@@ -359,4 +359,28 @@ body {
 .title_refuge_horaire {
   font-size: 1.4em;
 }
+
+/* RESPONSIVE DESKTOP */
+@media only screen and (min-width: 1080px) {
+  .block_main {
+    display: flex;
+    width: 100%;
+  }
+
+  .box_img_text_main {
+    width: 45%;
+  }
+
+  .block_main_right {
+    width: 100%;
+  }
+
+  .filter_visit {
+    width: 31%;
+  }
+
+  .banner_main {
+    height: 100%;
+  }
+}
 /* **************************** FIN VISIT PAGE  */
