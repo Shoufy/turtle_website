@@ -322,6 +322,20 @@ body {
   width: 100%;
   background-color: var(--bleu-turquoise-semi-transparent);
 }
+
+.filter_formation {
+  height: 3em;
+  position: absolute;
+  width: 100%;
+  background-color: var(--bleu-fonce-semi-transparent);
+}
+
+.filter_tarif {
+  height: 3em;
+  position: absolute;
+  width: 100%;
+  background-color: var(--bleu-clair-semi-transparent);
+}
 /* *** FIN MAIN VISIT PAGE (PART TOP) */
 
 .box_nav_menu_main {
@@ -349,17 +363,40 @@ body {
   height: 2.5em;
 }
 
+.box_logo_refuge_tarif {
+  display: flex;
+  align-items: center;
+  color: var(--bleu-clair);
+  height: 2.5em;
+}
+
 .fa-archway,
-.fa-clock {
+.fa-clock,
+.fa-tag,
+.fa-list-check {
   font-size: 1.4em;
   margin-right: 0.3em;
 }
 
 .title_refuge,
-.title_refuge_horaire {
+.title_refuge_horaire,
+.title_tarif {
   font-size: 1.4em;
 }
 
+.box_logo_refuge_formation {
+  color: var(--bleu-fonce);
+  display: flex;
+  align-items: center;
+  height: 2.5em;
+}
+
+.box_logo_refuge_tarif {
+  color: var(--bleu-clair);
+  display: flex;
+  align-items: center;
+  height: 2.5em;
+}
 /* RESPONSIVE DESKTOP */
 @media only screen and (min-width: 1080px) {
   .block_main {
@@ -376,6 +413,14 @@ body {
   }
 
   .filter_visit {
+    width: 31%;
+  }
+
+  .filter_formation {
+    width: 31%;
+  }
+
+  .filter_tarif {
     width: 31%;
   }
 
