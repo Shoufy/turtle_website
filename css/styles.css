@@ -540,8 +540,36 @@ body {
     width: 35%;
   }
 
-  input[type="email"] {
+  .input_email {
     width: 30em;
+  }
+}
+
+/* RESPONSIVE DESKTOP */
+@media only screen and (min-width: 1080px) {
+  .filter_meet {
+    width: 31%;
+    height: 10em;
+  }
+
+  .box_visit_banner_main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 31%;
+    height: 10em;
+  }
+
+  .box_form {
+    display: block;
+  }
+
+  .form_css {
+    width: fit-content;
+  }
+
+  .input_email {
+    width: 12em;
   }
 }
 /* **************************** FIN MEET PAGE  */
