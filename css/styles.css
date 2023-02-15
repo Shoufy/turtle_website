@@ -292,3 +292,71 @@ body {
     padding: 1em 0;
   }
 }
+
+/* **************************** VISIT PAGE  */
+/* *** MAIN VISIT PAGE (PART TOP) */
+.banner_main {
+  width: 100%;
+  height: 10em;
+  object-fit: cover;
+  object-position: unset;
+}
+
+.box_img_text_main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.box_visit_banner_main {
+  position: absolute;
+}
+
+.paragraph_visit_banner_main {
+  color: white;
+}
+
+.filter_visit {
+  height: 3em;
+  position: absolute;
+  width: 100%;
+  background-color: var(--bleu-turquoise-semi-transparent);
+}
+/* *** FIN MAIN VISIT PAGE (PART TOP) */
+
+.box_nav_menu_main {
+  display: flex;
+  align-items: center;
+  margin: 1em 1.5em;
+}
+
+.fa-house {
+  font-size: 1.4em;
+  margin-right: 0.7em;
+  color: var(--bleu-icone-maison);
+}
+
+.block_section_one,
+.block_section_two {
+  margin: 0 1em;
+}
+
+.box_logo_refuge,
+.box_logo_refuge_horaire {
+  display: flex;
+  align-items: center;
+  color: var(--bleu-turquoise);
+  height: 2.5em;
+}
+
+.fa-archway,
+.fa-clock {
+  font-size: 1.4em;
+  margin-right: 0.3em;
+}
+
+.title_refuge,
+.title_refuge_horaire {
+  font-size: 1.4em;
+}
+/* **************************** FIN VISIT PAGE  */
