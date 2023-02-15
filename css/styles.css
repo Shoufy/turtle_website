@@ -11,6 +11,7 @@
   --bleu-icone-maison: #0a415b;
   --bleu-icone-gallerie-page: #0a415b;
   --bleu-fonce-semi-transparent-gallerie-page: #02082a;
+  --bleu-fonce-semi-transparent-gallere-rgba: rgba(2, 8, 42, 0.541);
 
   /* Font  */
   --font-family: Roboto, sans-serif;
@@ -103,13 +104,15 @@ body {
   max-width: 100%;
 }
 .container_section_two,
-.container_section_three {
+.container_section_three,
+.container_section_four {
   margin: 1em;
 }
 
 .box_nav_one,
 .box_nav_two,
-.box_nav_three {
+.box_nav_three,
+.box_nav_four {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -117,14 +120,16 @@ body {
 
 .box_a,
 .box_b,
-.box_c {
+.box_c,
+.box_d {
   position: relative;
   max-width: 100%;
 }
 
 .box_visit,
 .box_tarif,
-.box_formation {
+.box_formation,
+.box_meet {
   /*display: none;
   */
   text-align: center;
@@ -156,9 +161,13 @@ body {
   background-color: var(--bleu-fonce);
 }
 
+.box_meet {
+  background-color: var(--bleu-icone-gallerie-page);
+}
 .round_image_one,
 .round_image_two,
-.round_image_three {
+.round_image_three,
+.round_image_four {
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -274,14 +283,16 @@ body {
 @media only screen and (min-width: 1080px) {
   .round_image_one,
   .round_image_two,
-  .round_image_three {
+  .round_image_three,
+  .round_image_four {
     width: 19em;
     height: 19em;
   }
 
   .box_visit,
   .box_tarif,
-  .box_formation {
+  .box_formation,
+  .box_meet {
     width: 8em;
     font-size: 1.2em;
     border: 1px solid black;
@@ -338,6 +349,13 @@ body {
   width: 100%;
   background-color: var(--bleu-clair-semi-transparent);
 }
+
+.filter_meet {
+  height: 3em;
+  position: absolute;
+  width: 100%;
+  background-color: var(--bleu-fonce-semi-transparent-gallere-rgba);
+}
 /* *** FIN MAIN VISIT PAGE (PART TOP) */
 
 .box_nav_menu_main {
@@ -372,10 +390,19 @@ body {
   height: 2.5em;
 }
 
+.box_logo_refuge_meet {
+  display: flex;
+  align-items: center;
+  color: var(--bleu-fonce-semi-transparent-gallerie-page);
+  height: 2.5em;
+}
+
 .fa-archway,
 .fa-clock,
 .fa-tag,
-.fa-list-check {
+.fa-list-check,
+.fa-water,
+.fa-envelope-open-text {
   font-size: 1.4em;
   margin-right: 0.3em;
 }
@@ -395,6 +422,13 @@ body {
 
 .box_logo_refuge_tarif {
   color: var(--bleu-clair);
+  display: flex;
+  align-items: center;
+  height: 2.5em;
+}
+
+.box_logo_refuge_meet {
+  color: var(--bleu-fonce-semi-transparent-gallerie-page);
   display: flex;
   align-items: center;
   height: 2.5em;
@@ -431,3 +465,57 @@ body {
   }
 }
 /* **************************** FIN VISIT PAGE  */
+
+/* **************************** DEBUT MEET PAGE  */
+
+.block_nav_gallerie {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box_img_gallerie {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+
+.gallerie_img_small {
+  width: 100%;
+}
+
+.text_inscription {
+  color: var(--bleu-fonce-semi-transparent-gallerie-page);
+  font-weight: bold;
+}
+
+.box_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5em;
+}
+
+.form_css {
+  display: flex;
+  border: 1px solid var(--bleu-fonce-semi-transparent-gallerie-page);
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.btn_submit_form {
+  background-color: var(--bleu-fonce-semi-transparent-gallerie-page);
+  color: var(--white);
+  border: 0 none;
+  cursor: pointer;
+}
+
+/* **************************** FIN MEET PAGE  */
